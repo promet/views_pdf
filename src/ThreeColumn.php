@@ -1,21 +1,12 @@
 <?php
+namespace Drupal\views_pdf;
 
 /**
- * @file
- * Contains \Drupal\views_pdf\Plugin\views\style\Unformatted.
- */
-
-// We can't use name space in views 7.x-x.x
-// namespace Drupal\views_pdf\Plugin\views\style;
-
-// use Drupal\views_pdf\ViewsPdfBase;
-
-/**
- * This class holds all the funtionality used for the unformatted style plugin.
+ * This class holds all the funtionality used for the Three Column style plugin.
  *
  * @ingroup views_style_plugins
  */
-class Unformatted extends views_plugin_style {
+class ThreeColumn extends views_plugin_style {
 
   /**
    * Render the grouping sets.
