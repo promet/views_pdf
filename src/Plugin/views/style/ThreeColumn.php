@@ -90,14 +90,23 @@ class ThreeColumn extends views_plugin_style {
     if (empty($this->view->feed_icon)) {
       $this->view->feed_icon = '';
     }
-    $this->view->feed_icon .= theme(
-      'views_pdf_icon',
-      array(
-        'path'    => $this->view->get_url(NULL, $path),
-        'title'   => $title,
-        'options' => $url_options,
-      )
-    );
+    // @FIXME
+// theme() has been renamed to _theme() and should NEVER be called directly.
+// Calling _theme() directly can alter the expected output and potentially
+// introduce security issues (see https://www.drupal.org/node/2195739). You
+// should use renderable arrays instead.
+// 
+// 
+// @see https://www.drupal.org/node/2195739
+// $this->view->feed_icon .= theme(
+//       'views_pdf_icon',
+//       array(
+//         'path'    => $this->view->get_url(NULL, $path),
+//         'title'   => $title,
+//         'options' => $url_options,
+//       )
+//     );
+
   }
 
 }

@@ -1,14 +1,5 @@
 <?php
-
-/**
- * @file
- * Contains \Drupal\views_pdf\Plugin\views\row\Fields.
- */
-
-// We can't use name space in views 7.x-x.x
-// namespace Drupal\views_pdf\Plugin\views\row;
-
-// use Drupal\views_pdf\ViewsPdfBase;
+namespace Drupal\views_pdf;
 
 /**
  * This class contains all the functionality of the field PDF style.

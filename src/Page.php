@@ -1,15 +1,5 @@
 <?php
-
-/**
- * @file
- * Contains \Drupal\views_pdf\Plugin\views\display\Page.
- */
-
-// We can't use name space in views 7.x-x.x
-// namespace Drupal\views_pdf\Plugin\views\display;
-
-// use Drupal\views_pdf\ViewsPdfBase;
-// use Drupal\views_pdf\ViewsPdfTemplate;
+namespace Drupal\views_pdf;
 
 /**
  * This class contains all the functionality of the PDF display.
