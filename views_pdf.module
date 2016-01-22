@@ -2,13 +2,11 @@
 
 /**
  * @file
+ * Generation of PDF from views.
  *
  * PDF Views allows the creation of PDF's directly from a view. Without the
  * creation of HTML first.
  */
-
-xautoload()->registerModulePsr4(__FILE__, 'src');
-_xautoload_register_drupal();
 
 /**
  * Implements hook_views_api().
@@ -43,10 +41,6 @@ function views_pdf_libraries_info() {
         'vendor/tecnick.com/tcpdf/tcpdf.php',
       ),
     ),
-    'xautoload' => function($api) {
-      $api->addPsr4('fpdi', 'src');
-      $api->composerDir('vendor/composer');
-    }
   );
 
   $libraries['fpdi'] = array(
@@ -134,8 +128,6 @@ function theme_views_pdf_icon($vars) {
 // Calling _theme() directly can alter the expected output and potentially
 // introduce security issues (see https://www.drupal.org/node/2195739). You
 // should use renderable arrays instead.
-// 
-// 
 // @see https://www.drupal.org/node/2195739
 // $image      = theme('image', array(
 //       'path'  => $image_path,
